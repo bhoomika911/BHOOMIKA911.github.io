@@ -1,0 +1,10 @@
+<html>
+<head>
+	<script type="text/javascript">
+		const queryString = window.location.search;
+		let inviteCode = queryString.split("=")[1];
+		setTimeout(function () { window.location = "https://www.google.com/"; }, 25);
+		window.location = "app-domain://accept-invitation?inviteCode="+inviteCode;    // app-domain set in mobile app Ex : myApp or testApp
+	</script>
+</head>
+<html>
